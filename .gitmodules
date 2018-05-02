@@ -1,0 +1,7 @@
+[submodule "components/M5Stack"]
+	path = components/M5Stack
+	url = https://github.com/m5stack/M5Stack.git
+[submodule "components/arduino"]
+	path = components/arduino
+	url = https://github.com/espressif/arduino-esp32.git
+	branch = idf-update
