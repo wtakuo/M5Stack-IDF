@@ -6,6 +6,12 @@ To use as a M5Stack component of ESP-IDF
   ```bash
   git clone --recursive https://github.com/m5stack/M5Stack-IDF.git
   ```
+
+- Apply patch
+  ```bach
+  patch -p0 < patch.txt
+  ```
+
 - ```make menuconfig``` has some Arduino options
   - "Autostart Arduino setup and loop on boot"
     - If you enable this options, your main.cpp should be formated like any other sketch
