@@ -7,9 +7,10 @@ To use as a M5Stack component of ESP-IDF
   git clone --recursive https://github.com/m5stack/M5Stack-IDF.git
   ```
 
-- Apply patch
-  ```bach
-  patch -p0 < patch.txt
+- Apply patch that fixes paths in component.mk
+  ```bash
+  cd components/M5Stack
+  patch < ../../patch.txt
   ```
 
 - ```make menuconfig``` has some Arduino options
