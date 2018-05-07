@@ -4,13 +4,13 @@ To use as a M5Stack component of ESP-IDF
 - Download and install [esp-idf](https://github.com/espressif/esp-idf)
 - Create template idf project
   ```bash
-  git clone --recursive https://github.com/m5stack/M5Stack-IDF.git
+  git clone --recursive -b components_patch https://github.com/m5stack/M5Stack-IDF.git
   ```
 
-- Apply patch that fixes paths in component.mk
+- Apply patch that fixes paths in M5Stack/component.mk
   ```bash
-  cd components/M5Stack
-  patch < ../../patch.txt
+  cd M5Stack-IDF
+  patch -d components/M5Stack < patch.txt
   ```
 
 - ```make menuconfig``` has some Arduino options
